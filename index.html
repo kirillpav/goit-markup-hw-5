@@ -16,7 +16,8 @@
             <a href="index.html" class="logo"><span class="title">Web</span>Studio</a>
             <nav>
                 <ul class="site-nav list">
-                    <li class="item"><a href="./index.html" class="site-nav-link current">Студия</a></li>
+                    <li class="item"><a href="./index.html" class="site-nav-link current">Студия</a>
+                    </li>
                     <li class="item"><a href="./portfolio.html" class="site-nav-link">Портфолио</a></li>
                     <li class="item"><a href="" class="site-nav-link">Контакты</a></li>
                 </ul>
@@ -34,7 +35,7 @@
             <div class="hero-bcg">
                 <div class="container">
                     <h1 class="hero-title">Эффективные решения <br> для вашего бизнеса</h1>
-                    <button type="button" class="button">Заказать услугу</button>
+                    <button type="button" class="button" data-open-modal>Заказать услугу</button>
                 </div>
             </div>
         </section>
@@ -70,9 +71,21 @@
             <div class="container">
                 <h2 class="section-title">Чем мы занимаемся</h2>
                 <ul class="work-list list">
-                    <li class="item"><img src="./imgs/code.jpg" alt="Написание Кода" width="370" height="294"></li>
-                    <li class="item"><img src="./imgs/phone.jpg" alt="Фотография на телефон" width="370" height="294"></li>
-                    <li class="item"><img src="./imgs/tablet.jpg" alt="Дизайн на планшетеы" width="370" height="294"></li>
+                    <li class="item"><img src="./imgs/code.jpg" alt="Написание Кода" width="370" height="294">
+                        <div class="work-overlay">
+                            <h3>Десктопные приложения</h3>
+                        </div>
+                    </li>
+                    <li class="item"><img src="./imgs/phone.jpg" alt="Фотография на телефон" width="370" height="294">
+                        <div class="work-overlay">
+                            <h3>Мобильные приложения</h3>
+                        </div>
+                    </li>
+                    <li class="item"><img src="./imgs/tablet.jpg" alt="Дизайн на планшетеы" width="370" height="294">
+                    <div class="work-overlay">
+                        <h3>Дизайнерские решения</h3>
+                    </div>
+                    </li>
                 </ul>
             </div>
         </section>
@@ -251,6 +264,17 @@
             </ul>
         </section>
 
+        <div class="backdrop is-hidden" data-backdrop>
+            <div class="modal">
+                <button type="button" class="close-button" data-close-modal>
+                    <svg class="close-icon" width="11px" height="11px">
+                        <use href="./imgs/sprite.svg#vector"></use>
+                    </svg>
+                </button>
+            </div>
+
+        </div>
+
     </main>
 
     <!-- footer -->
@@ -301,5 +325,7 @@
             </div>
         </div>
     </footer>
+
+    <script src="./js/modal.js"></script>
 </body>
 </html>
