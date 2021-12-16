@@ -199,12 +199,11 @@ p {
 /* hero */
 
 .hero {
-  display: block;
-  margin-bottom: 94px;
   text-align: center;
-}
 
-.hero-bcg {
+  padding-top: 200px;
+  padding-bottom: 200px;
+
   max-width: 1600px;
   height: 600px;
   background-image: linear-gradient(
@@ -215,11 +214,14 @@ p {
     url(../imgs/hero-bcg.jpg);
 
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-color: #2f303a;
 
   margin: 0 auto;
+}
+
+.hero-bcg {
 }
 
 .hero-title {
@@ -231,8 +233,6 @@ p {
 
   margin-top: 0;
   margin-bottom: 30px;
-
-  padding-top: 200px;
 
   text-align: center;
   text-transform: uppercase;
@@ -391,6 +391,7 @@ p {
 
 .team-text {
   padding: 0;
+  margin-bottom: 16px;
 
   color: var(--secondary-text-color);
 
@@ -419,7 +420,6 @@ p {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  margin-bottom: 30px;
 
   transition: background-color 250ms var(--timing-function);
 }
@@ -505,16 +505,18 @@ p {
 .foot {
   background-color: #2f303a;
   height: 252px;
+
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .container-footer {
   display: flex;
+
+  align-items: baseline;
 }
 
 .foot-address {
-  display: inline-block;
-  padding-bottom: 9px;
-
   color: var(--white-color);
 
   font-style: normal;
@@ -532,8 +534,6 @@ p {
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
-
-  padding-top: 60px;
 }
 
 .foot-contact-link {
@@ -549,7 +549,7 @@ p {
 }
 
 .foot-list > .item:not(:last-child) {
-  padding-bottom: 9px;
+  margin-bottom: 9px;
 }
 
 .foot-contact-link:hover,
@@ -577,7 +577,6 @@ p {
   font-size: 14px;
   line-height: 1.14;
 
-  margin-top: 72px;
   margin-bottom: 20px;
 }
 
@@ -589,13 +588,6 @@ p {
 .join-list > .item:not(:last-child) {
   margin-right: 10px;
 }
-
-/* .join-list > .item {
-  background-color: rgba(255, 255, 255, 0.1);
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-} */
 
 .footer-join-link {
   display: inline-block;
